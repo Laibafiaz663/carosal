@@ -1,0 +1,139 @@
+$black: black;
+$white: white;
+$grey: #B8B8B9;
+$yellow: #FFC80B;
+$red:red;
+$primary-color:#92AFBF;
+$width:900px;
+
+
+body{
+    overflow: hidden;
+    overflow-y: auto;
+}
+.section-space{
+    padding: 3rem 0;
+}
+p{
+    text-wrap:pretty;
+}
+.container {
+    max-width:$width;
+    margin: 0 auto;
+}
+.lg-container{
+    max-width:1300px;
+    margin:0 auto;
+}
+.partial-container{
+    max-width: calc($width + (50% - $width / 2));
+
+
+}
+.partial-right-container{
+    max-width: calc($width + (50% - $width / 2));
+    margin-left: auto;
+}
+
+.common-mini-heading {
+    text-transform: capitalize;
+    color: $grey;
+    position: relative;
+    padding-left: 1.5rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+
+    font : {
+        size: 1rem;
+        weight: 500;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 1px;
+        background-color: darken($grey, 20%);
+        left: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+
+    }
+}
+.common-section-heading {
+    font : {
+        size: 1.5rem;
+        weight: 700;
+    }
+
+    max-width: 410px;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    display:block;
+    text-transform: capitalize;
+    text-wrap: pretty;
+}
+.common-sec-subheading{
+    font : {
+    size: 1.2rem;
+    weight: 500;
+}
+    text-transform: capitalize;
+    margin-bottom: 0.8rem;
+    display:block;
+
+}
+
+.common-btn {
+    font : {
+        size: 1rem;
+        weight: 500;
+
+    }
+
+    border: none;
+    text-transform: capitalize;
+}
+
+.lg-btn-style {
+    padding: 0.5rem 3rem;
+
+}
+
+.sm-btn-style {
+    padding: 0.5rem 1.5rem;
+
+}
+
+.trasparent-btn {
+    background-color: transparent;
+    color: $black;
+    border: 1px solid $black;
+    transition: 0.5s linear all;
+    &:hover{
+        background-color: $black;
+        color: $white;
+        border-color: $white;
+    }
+}
+
+.yellow-btn {
+    background-color: $yellow;
+    color: $black;
+    border: 1px solid $yellow;
+}
+
+.black-btn {
+    background-color: $black;
+    color: $white;
+    border: 1px solid $white;
+}
+
+
+
+// <button class="lg-btn-style trasparent-btn common-btn">hello</button>
+// <button class="lg-btn-style yellow-btn common-btn">hello</button>
+// <button class="lg-btn-style black-btn common-btn">hello</button>
+// <button class="sm-btn-style trasparent-btn common-btn">hello</button>
+// <button class="sm-btn-style yellow-btn common-btn">hello</button>
+// <button class="sm-btn-style black-btn common-btn">hello</button>
