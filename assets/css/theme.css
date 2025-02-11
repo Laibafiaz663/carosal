@@ -11948,7 +11948,7 @@ button.swiper-pagination-bullet {
 }
 .section-4-wrapper .ideology-col .ideology-icon {
   position: relative;
-  padding-left: 3rem;
+  padding-left: 5rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -11957,7 +11957,7 @@ button.swiper-pagination-bullet {
 .section-4-wrapper .ideology-col .ideology-icon .ideology-icon-col {
   position: absolute;
   top: 0.4rem;
-  left: 0;
+  left: 10px;
 }
 .section-4-wrapper .ideology-col .ideology-icon .ideology-icon-col i {
   font-size: 2rem;
@@ -12189,26 +12189,17 @@ button.swiper-pagination-bullet {
     position: static !important;
     aspect-ratio: 5/2;
   }
+  .section-7-wrapper .section-7-col {
+    padding: 0 1rem;
+  }
   .section-7-wrapper .section-7-col .swiper-slide figure {
     aspect-ratio: 3/2 !important;
   }
   .section-7-wrapper .section-7-col .section-7-control-btns {
-    display: block;
-    position: static !important;
-  }
-  .section-7-wrapper .section-7-col .section-7-control-btns .section-7-prev {
-    position: absolute !important;
+    display: flex;
+    position: absolute;
+    bottom: 33px;
     z-index: 999;
-    top: 50%;
-    left: 2rem;
-    transform: translate(0, -50%);
-  }
-  .section-7-wrapper .section-7-col .section-7-control-btns .section-7-next {
-    position: absolute !important;
-    z-index: 999;
-    top: 50%;
-    right: 2rem;
-    transform: translate(0, -50%);
   }
   .footer-wrapper .footer-strip {
     display: block !important;
@@ -12229,6 +12220,10 @@ button.swiper-pagination-bullet {
 @media (max-width: 991px) {
   .hero-section-wrapper {
     min-height: 100vh;
+  }
+  .hero-section-wrapper .navbar-wrapper {
+    background-color: white;
+    top: 0;
   }
   .hero-section-wrapper .navbar-wrapper ul li::after {
     display: none;

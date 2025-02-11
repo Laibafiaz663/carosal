@@ -22,6 +22,7 @@
 
 
     .section-7-col {
+      padding: 0 1rem;
       .swiper-slide {
         figure {
           aspect-ratio: 3 / 2 !important;
@@ -31,31 +32,14 @@
       }
 
       .section-7-control-btns {
-        display: block;
-        position: static !important;
+        display:flex;
+        position:absolute;
+        bottom: 33px;
+        z-index:999;
 
-        .section-7-prev {
-          position: absolute !important;
-          z-index: 999;
-          top: 50%;
-          left: 2rem;
-          transform: translate(0, -50%);
+      
 
-
-        }
-
-        .section-7-next {
-          position: absolute !important;
-          z-index: 999;
-          top: 50%;
-          right: 2rem;
-          transform: translate(0, -50%);
-
-
-
-
-
-        }
+    
       }
     }
   }
@@ -108,6 +92,8 @@
 
 
     .navbar-wrapper {
+      background-color: $white;
+      top:0;
 
 
       ul {

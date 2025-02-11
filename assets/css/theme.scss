@@ -343,7 +343,7 @@
 
         .ideology-icon {
             position: relative;
-            padding-left: 3rem;
+            padding-left: 5rem;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -352,7 +352,7 @@
             .ideology-icon-col {
                 position: absolute;
                 top: 0.4rem;
-                left: 0;
+                left: 10px;
 
                 i {
                     font-size: 2rem;
@@ -382,10 +382,6 @@
         }
     }
 }
-
-// section-5
-.section-5-wrapper {}
-
 //section-6
 .section-6-wrapper {
     .section-6-col {
